@@ -4,15 +4,15 @@ const senha = document.getElementById("senha");
 const formulario = document.getElementById("formulario");
 
 formulario.onsubmit = (evento) => {
-    let dados = JSON.parse(localStorage.getItem("base"));
-
-    dados.array.array.forEach((elemento) => {
+    let dados = JSON.parse(localStorage.getItem("dados"));
+     alert("anjw")
+    dados.forEach(elemento => {
         if (elemento.email == email.value && elemento.senha ===senha.value) {
             evento.preventDefault();
-            mensagem.innerHTML("logado");
+            alert("logado");
             return true;
         } else {
-            mensagem.innerHTML = "Senha ou E-mail Incorreto"
+            alert("Senha ou E-mail Incorreto")
         }
     });
 }

@@ -3,11 +3,13 @@ const formulario = document.getElementById("formulario");
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
+const csenha = document.getElementById("csenha");
+
 
 formulario.onsubmit = (evento) =>{
     if (nome.value == ""){
         evento.preventDefault();
-        mensagem.innerHTML = "<p> Digite seu nome! </p>";
+        mensagem.innerHTML = "Digite seu nome!";
         nome.focus();
         return null;
     }
@@ -22,6 +24,13 @@ formulario.onsubmit = (evento) =>{
     if(senha.value == ""){
         evento.preventDefault();
         mensagem.innerHTML = "<p> Digite sua senha </p>";
+        senha.focus();
+        return null;
+    }
+
+    if(senha.value != csenha.value){
+        evento.preventDefault();
+        mensagem.innerHTML = "<p> Senhas nao coferem </p>";
         senha.focus();
         return null;
     }
