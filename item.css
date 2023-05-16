@@ -7,7 +7,7 @@
   .container{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-rows: 15vh 60vh 15vh;
     grid-template-areas:
     "h"
     "m"
@@ -108,12 +108,19 @@ form >input[type="submit"]{
 
 footer{
   grid-area: r;
-  background-color: #BFB0B0;
+  background-color: #937c7c;
   display: flex;
-  justify-content: space-around;
-  color: white;
-  padding: 32px;
-  border-radius: 10px solid black;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+footer > div{
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 

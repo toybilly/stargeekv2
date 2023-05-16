@@ -7,7 +7,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-rows: 15vh 70vh 25vh;
     grid-template-areas:
     "h"
     "i"
@@ -25,15 +25,15 @@ header{
     align-items: center;
 }
 
-.menu a{
+header > a>input{
     border-radius: 20px;
-    background-color: #ad9090;
+    background-color: #937c7c;
     padding: 10px 20px;
     height: 40px;
     text-decoration: none;
     color: white;
     display: flex;
-    }
+}
 
 main{
     grid-area: i;
@@ -42,12 +42,10 @@ main{
     flex-direction: column;
     row-gap: 50px;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
      font-size: 20px;
 
 }
-
-
 
 form{
     display: flex;
@@ -60,6 +58,18 @@ form > input{
     font-size: 18px;
 }
 
+form >div{
+    border-radius: 20px;
+    background-color: #7F5D5D;
+    padding: 10px 20px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+form > div > a{
+    color: white;
+}
 form >input[type="submit"]{
     background-color: #7F5D5D;
     color: black;
@@ -70,11 +80,18 @@ form >input[type="submit"]{
 
 footer{
     grid-area: r;
-    background-color: #BFB0B0;
+    background-color: #937c7c;
     display: flex;
-    justify-content: space-around;
-    color: white;
-    padding: 40px;
-    border-radius: 10px solid black;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+footer > div{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
 }

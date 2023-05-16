@@ -7,7 +7,7 @@
 .container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 100vh;
     grid-template-areas: "c f";
 }
 
@@ -48,8 +48,48 @@ form >input[type="submit"]{
 
 aside{
     grid-area: c;
+    background-image: url(img/Rectangle\ 25.png);
+    background-size: 100% 100%;
 }
 
+main >a{
+    border-radius: 20px;
+background-color: #7F5D5D;
+padding: 10px 20px;
+height: 40px;
+text-decoration: none;
+color: white;
+display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+form > input{
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+form >a{
+    border-radius: 20px;
+    background-color: #7F5D5D;
+    padding: 5px 10px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+form >input[type="submit"]{
+    background-color: #7F5D5D;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
 
 input{
     display: block;
@@ -69,4 +109,14 @@ input[type="submit"]{
     color: white;
     display: block;
     margin: 30px auto;
+}
+
+@media(max-width:800px){
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 300px;
+        grid-template-areas: "f"
+        "c";
+    }
 }

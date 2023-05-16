@@ -80,15 +80,12 @@ section a{
   color: white;
 }
 
-
 footer{
   grid-area: r;
-  background-color: #BFB0B0;
+  background-color: #937c7c;
   display: flex;
-  justify-content: space-around;
-  color: white;
-  padding: 20px;
-  border-radius: 10px solid black;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
