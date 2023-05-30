@@ -54,6 +54,7 @@ form{
 }
 
 form > input{
+    
     border-radius: 10px;
     font-size: 18px;
 }

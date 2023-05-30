@@ -5,11 +5,18 @@ const formulario = document.getElementById("formulario");
 
 formulario.onsubmit = (evento) => {
     let dados = JSON.parse(localStorage.getItem("dados"));
-     alert("anjw")
     dados.forEach(elemento => {
         if (elemento.email == email.value && elemento.senha ===senha.value) {
+            mensagem.innerHTML = "aguarde redirecionamento..."
+            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+            dados.push(
+                {
+                email : email.value
+                }
+            )
+            sessionStorage.setItem("logado", JSON.stringify(dados) );
             evento.preventDefault();
-            alert("logado");
+            window.location.assign("catalogo.html");
             return true;
         } else {
             alert("Senha ou E-mail Incorreto")

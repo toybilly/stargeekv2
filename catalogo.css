@@ -51,16 +51,19 @@ main{
   background-color: #978080;
   width: 100%;
   margin-top: 20px;
+  column-gap: 50px;
 }
 
 .card{
-  min-width: 20%;
+  min-width: 270px;
   margin-top: 10px;
 }
 
 .card img{
-  width: 100%;
+  width: 270px;
+  height: 150px;
 }
+
 .cardinfo{
   background-color: black;
   color: white;
@@ -78,6 +81,7 @@ section a{
   height: 40px;
   text-decoration: none;
   color: white;
+  align-items: center;
 }
 
 footer{

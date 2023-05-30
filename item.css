@@ -43,7 +43,7 @@ main{
   flex-direction: column;
   row-gap: 50px;
   align-items: center;
-  padding: 40px;
+  padding: 90px;
   font-size: 20px;
 }
 
@@ -52,14 +52,16 @@ main > form >div {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  padding: 10px;
+  padding: 30px;
 }
 
 form{
-  text-align: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  row-gap: 10px;
 }
 
 form > div {
@@ -71,6 +73,8 @@ form > div {
 form label {
   display: block;
   margin-bottom: 5px;
+  align-items: left;
+  text-align: left;
 }
 
 input + label {
@@ -78,32 +82,30 @@ input + label {
   margin: 0;
   padding: 40px;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  text-align: left;
 }
 
-.entrar a{
+.entrar {
   border-radius: 20px;
   background-color: rgb(84, 73, 73);
-  padding: 20px 30px;
-  height: 40px;
+  padding: 10px 20px;
   text-decoration: none;
   color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
 }
 
 form > input{
   border-radius: 15px;
   font-size: 15px;
-  text-align: center;
+  text-align: left;
 }
 
-form >input[type="submit"]{
+form >input [type="submit"]{
   background-color: #7F5D5D;
   color: black;
   font-size: 20px;
   border-radius: 10px;
+  align-items: left;
 }
 
 footer{
